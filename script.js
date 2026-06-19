@@ -21,7 +21,7 @@ function openStoryDialog(card) {
   dialogPages.textContent = story.pages;
   dialogSummary.textContent = story.summary;
   dialogPdf.href = story.pdf;
-  dialogPdf.textContent = isArabic ? "افتحي القصة" : "Open PDF";
+  dialogPdf.textContent = isArabic ? "افتح القصة" : "Open PDF";
 
   dialogThemes.replaceChildren();
   story.themes.split(",").forEach((theme) => {
@@ -48,4 +48,17 @@ dialog.addEventListener("click", (event) => {
   if (event.target === dialog) {
     dialog.close();
   }
+});
+
+document.querySelectorAll(".intro-band a, .shelf-nav a").forEach((link) => {
+  link.addEventListener("click", () => {
+    const target = document.querySelector(link.getAttribute("href"));
+    const carousel = target?.querySelector(".carousel-row");
+
+    if (carousel) {
+      window.setTimeout(() => {
+        carousel.scrollTo({ left: 0, behavior: "smooth" });
+      }, 250);
+    }
+  });
 });

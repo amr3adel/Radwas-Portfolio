@@ -7,8 +7,14 @@ A static portfolio for Radwa Abdelmonaem's stories and writing.
 - Adult stories
   - `Felfela & The Quiet Storm`
   - `Seasons of Rose's`
-- Children's stories
-  - Shelf prepared for upcoming files
+- Arabic children's stories
+  - `مغامرات الفيل زغنطط في مدينة الاحلام`
+  - `سلحوفة المكسوفة`
+  - `نوم من عمرى`
+  - `تووت توووت و خطة كام كلب صغنطوت`
+  - `اشطر لعييب`
+  - `جميلة الجميلات`
+  - `سنجوب الطيوب`
 
 ## Local Preview
 
